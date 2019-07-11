@@ -3,29 +3,6 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "jest": {
-    "setupFiles": [
-      "<rootDir>/test-shim.js",
-      "<rootDir>/test-setup.js"
-    ],
-    "moduleFileExtensions": [
-      "ts",
-      "tsx",
-      "js",
-      "jsx",
-      "json",
-      "node"
-    ],
-    "transform": {
-      "^.+\\.(ts|tsx)$": "babel-jest"
-    },
-    "transformIgnorePatterns": [
-      "<rootDir>/node_modules/"
-    ],
-    "testMatch": [
-      "**/__tests__/**/*.(ts|tsx|js)"
-    ]
-  },
   "scripts": {
     "dev": "node server.js",
     "test": "jest",
