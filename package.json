@@ -1,0 +1,72 @@
+{
+  "name": "booking-form-task",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "jest": {
+    "setupFiles": [
+      "<rootDir>/test-shim.js",
+      "<rootDir>/test-setup.js"
+    ],
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js",
+      "jsx",
+      "json",
+      "node"
+    ],
+    "transform": {
+      "^.+\\.(ts|tsx)$": "babel-jest"
+    },
+    "transformIgnorePatterns": [
+      "<rootDir>/node_modules/"
+    ],
+    "testMatch": [
+      "**/__tests__/**/*.(ts|tsx|js)"
+    ]
+  },
+  "scripts": {
+    "dev": "node server.js",
+    "test": "jest",
+    "build": "next build",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/likezninjaz/booking-form-task.git"
+  },
+  "keywords": [],
+  "author": "Evgenii Studitskikh",
+  "license": "BSD-3-Clause",
+  "bugs": {
+    "url": "https://github.com/likezninjaz/booking-form-task/issues"
+  },
+  "homepage": "https://github.com/likezninjaz/booking-form-task#readme",
+  "dependencies": {
+    "@babel/preset-env": "^7.5.4",
+    "@types/react-datepicker": "^2.3.0",
+    "@zeit/next-typescript": "^1.1.1",
+    "express": "^4.16.4",
+    "lodash": "^4.17.14",
+    "moment": "^2.24.0",
+    "next": "^8.1.0",
+    "react": "^16.8.6",
+    "react-datepicker": "^2.8.0",
+    "react-dates": "^20.2.5",
+    "react-dom": "^16.8.6",
+    "styled-components": "^4.2.0",
+    "typescript": "^3.4.3"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.4.5",
+    "@types/express": "^4.16.1",
+    "@types/lodash": "^4.14.136",
+    "@types/next": "^8.0.3",
+    "@types/node": "^11.13.4",
+    "@types/react": "^16.8.13",
+    "@types/react-dom": "^16.8.4",
+    "@types/styled-components": "^4.1.14",
+    "babel-plugin-styled-components": "^1.10.0"
+  }
+}
