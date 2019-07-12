@@ -25,7 +25,7 @@ export default class extends React.Component<any, IIndexState> {
 
   static async getInitialProps () {
     
-    const mockData = require('../MOCK_DATA.json')
+    const mockData = require('../static/data/MOCK_DATA.json')
 
     return {
       hotelsData: mockData

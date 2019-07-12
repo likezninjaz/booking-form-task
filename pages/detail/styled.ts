@@ -21,6 +21,7 @@ export const Image = styled.img`
 `;
 
 export const Info = styled.div`
+  width: 300px;
   padding: 10px;
 `;
 
@@ -35,11 +36,25 @@ export const Location = styled.span`
   display: block;
   color: #707070;
   font-size: 14px;
-  line-height: 20px;
+  line-height: 24px;
 `;
 
 export const Rating = styled.span`
   padding-left: 5px;
 `;
 
-export const Actions = styled.div``;
+export const Actions = styled.div`
+  width: 200px;
+`;
+
+export const BookButton = styled.button`
+  width: 200px;
+  height: 30px;
+  margin-top: 10px;
+  background-color: #07c;
+  color: #fff;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+`;

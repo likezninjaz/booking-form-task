@@ -10,6 +10,7 @@ import {
   Actions,
   Name,
   Location,
+  BookButton,
 } from './styled';
 import {
   IHotels
@@ -37,13 +38,17 @@ class Detail extends React.Component<IDetailProps> {
 
   static async getInitialProps ({ req, query }: any) {
     
-    const mockData = require('../../MOCK_DATA.json');
+    const mockData = require('../../static/data/MOCK_DATA.json');
     const hotelId = req ? req.query.id : query.id;
     const hotelData = mockData.filter((hotel: IHotels) => hotel.id === hotelId);
 
     return {
       hotel: hotelData.length ? hotelData[0] : null
     }
+  }
+
+  private handleBookButtonClick = () => {
+    alert('Successfully booked!')
   }
 
   public render() {
@@ -55,6 +60,7 @@ class Detail extends React.Component<IDetailProps> {
     return (
       <Container>
         <Head>
+          <link rel="stylesheet" type="text/css" href="./static/styles/react-datepicker.min.css" />
           <title>{hotel ? `${hotel.name} - book it now` : 'Book your hotel'}</title>
         </Head>
         {hotel &&
@@ -66,7 +72,9 @@ class Detail extends React.Component<IDetailProps> {
               <Rating count={hotel.rating}/>
             </Info>
             <Actions>
+              Pick the booking dates:
               <Daterange />
+              <BookButton onClick={this.handleBookButtonClick}>Book</BookButton>
             </Actions>
           </Wrapper>
         }
