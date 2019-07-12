@@ -11,6 +11,7 @@ import {
   Name,
   Location,
   BookButton,
+  Description,
 } from './styled';
 import {
   IHotels
@@ -70,6 +71,7 @@ class Detail extends React.Component<IDetailProps> {
               <Name>{hotel.name}</Name>
               <Location>{hotel.city}</Location>
               <Rating count={hotel.rating}/>
+              <Description>{hotel.description}</Description>
             </Info>
             <Actions>
               Pick the booking dates:

@@ -43,6 +43,10 @@ export const Rating = styled.span`
   padding-left: 5px;
 `;
 
+export const Description = styled.p`
+  font-size: 12px;
+`;
+
 export const Actions = styled.div`
   width: 200px;
 `;
